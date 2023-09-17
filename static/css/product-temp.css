@@ -1,0 +1,88 @@
+*{
+margin:0px;
+padding:0px;
+
+}
+
+
+.temp{
+/*margin-top:12%;*/
+height: auto;
+width: 100%;
+background-color:#081B30;
+}
+
+.template{
+    position:relative;;
+    margin-top:12%;
+    background-color:#081B30;
+}
+
+/* Product Image CSS */
+.image{
+    position:absolute;
+    height:28rem;
+    width:20rem;
+    padding:0%;
+    margin:0%;
+    left:10%;
+
+}
+.image img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+}
+
+/* Name and Description CSS */
+.prod-details{
+    position:absolute;
+    float:left;
+    width:50%;
+    left:36%;
+    margin-top:3%;
+    height:55vh;
+}
+
+.prod-details h4,h3,h5{
+    padding-bottom:2%;
+    width:40%;
+    font-size:1.4rem;
+}
+
+.prod-details h5{
+    font-size:1.2rem;
+    line-height:1.6rem;
+   }
+
+.cart-btn{
+    padding:0.5rem;
+    color:white;
+    height:13%;
+    width:20%;
+    font-size:1.2rem;
+    background-color:#581B98;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: absolute;
+    bottom:0%;
+}
+
+.buy-btn{
+padding:0.5rem;
+color:white;
+    height:13%;
+    width:20%;
+    font-size:1.2rem;
+    background-color:#581B98;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+position: absolute;
+    bottom:0%;
+    right:58%;
+
+}

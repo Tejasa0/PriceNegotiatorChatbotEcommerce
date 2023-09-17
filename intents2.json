@@ -1,0 +1,148 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hiii",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+		"Hi", "How are you", 
+	"How are you feeling?", 
+	"Is anyone there?", 
+	"Hello", 
+	"Good day", 
+	"Good evening",
+          "good morning", 
+	"hello there?", 
+	"hey?",
+	"heya", 
+	"hey hey hey!", 
+	"somebody here?", 
+	"Hola!", "Jay Shree Ram", 
+	"Whats up?", 
+          "How are you feeling today?","Namaste"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting....How Can I help you",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?","Hello, thanks for visiting, How can I help?", "Good to see you here", "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","talk to you later", "hoping to see you again","goodbye","bye","Bye Bye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.","Thank you for your time come back soon!","Bye, Come Again. Thank you"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "negotiate",
+      "patterns": [
+        "yes,right",
+        "yes,right",
+        "Ya, that's my product",
+        "right, i want to buy this product but price is too high","i want this in a reasonable amount","price is too much!", "I would like to negotiate price for this"
+            ,"price is high compared to market","price is high","I want this product for cheaper rate","I want less rate", "rate is too much", "please lessen the rate",
+            "price seems high", "price seems unreasonable", "price is out of my range", "price is out of my budget", "It is out of my budget", "not a fair price", "price is not fair",
+            "give me for a fair price","I can not afford to buy it in this price.","I am here to bargain","i am here for a bargain","is that the final price?","is that tag final price?", 
+            "I cannot afford it. lower the price please", "lessen the price"
+      ],
+      "responses": [
+        "Ok, so at what price you want to buy",
+        "how much less you are demanding for this product ?",
+        "At what price you want the product ?","give me an offer", "give me an offer i cannot refuse",
+            "name your offer", "tell me your offer", "Alright how much can you pay?", "how much is your budget?",
+            "how much can you cough up?", "let your offer out.", "what is your offer?", "give me your offer", "give me a fair offer",
+            "although price tag is already fair one but i will look forward to fair offers from you."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "uniqueId",
+      "patterns": ["I want to buy this product", "How much for this product", "price for this product is too high"],
+      "responses": [
+        "Please send the unique id of the product you want to buy, we can discuss on the price.",
+        "please share the unique id.",
+        "Okay, please share the unique id of the product."
+      ]
+    },
+        {
+          "tag":"negotiate",
+          "patterns": [
+            "I refuse", "no we don't", "no we do not", "rejected", "I do not accept", "I don't accept", "I disagree", "no way this is too much",
+            "I reject", "no deal", "we dont have a deal", "we do not have a deal", "unacceptable", "this is too much for a fair offer","I wont accept",
+            "no way no deal", "I cannot accept that", "I will not accept that", "I may not accept that","nop no deal", "i do not like this", "refuse"
+          ],
+          "responses":[
+            "give me a fair offer then", "then give me an offer i cannot refuse",
+            "I am open to fair offers then", " then tell me your offer", "Alright how much can you pay then?", "then give me a fair offer in your budget?",
+            "how much can you cough up then?", "Alright! what is your offer then?", "give me another offer", "give me a fair offer then",
+            "my offer is already fair one but i will look forward to reasonable offers from you."
+          ]
+        },
+        {
+          "tag": "customeroffers",
+          "patterns":[
+            "I can pay an amount of rs.{}","I think it should not be more than", "I think rs.{} is a fair price", "I am ready to pay rs.{} for it", "I can surely pay rs.{} for it",
+            "I will give rs.{}", "I will give rs.{} for this", "I can give out rs.{}", "I can give out rs.{} for this item", "I can give out rs.{} for this product", "I will take it in rs.{}",
+            "I am ready to take it in rs.{}", "I will take it if you give it in rs.{}", "I will pay rs.{} for this", "I am not paying more than rs.{} for this",
+            "I think Rs.{} is the most accurate price for it", "rs.{} is my offer", "my offer is rs.{}", "I would like to lower that price tag to Rs.{}", 
+            "I want it in Rs.{}", "Give it to me in rs.{}","my budget is rs.{}", "my limit is rs.{}", "I can get the same for rs.{} in market",
+            "I can buy the same for rs.{} in market"
+          ],
+          "responses":["I will give it out for Rs.{}/-", "Alright then give Rs.{}/- for it.", "for you i will sell it in Rs.{}/-", "give Rs.{}/- and take it.", 
+          "Although the price is fair but i will reduce it to rs.{}/- for you",
+          "that would be a steal lets close the deal on rs.{}/-", "thats even lesser than the price we paid for it i can do rs.{}/-"
+          ]
+        }
+    
+  ]
+}

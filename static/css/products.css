@@ -1,0 +1,49 @@
+.p-header{
+    background-color: #581B98;
+    }
+
+.p-logo img{
+    
+        float: left;
+        position: relative;
+        width: 100px;
+        height:100px;
+        border-radius:50%;
+        margin-bottom:1rem;
+
+}
+
+.p-clothes{
+    width: 100%; 
+    float: left;
+    background-color: #081b30;
+    height: auto;
+    margin-top: 8rem;
+}
+
+
+.desc{
+    color:
+}
+
+.prod img{
+width:70%;
+
+}
+
+.prod h6{
+font-size:0.8rem;
+
+}
+
+.rupee{
+    top: 3px;
+    height: 1rem;
+    position: relative;
+}
+
+
+
+
+
+

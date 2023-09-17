@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--	<link rel="stylesheet" href="static/index.css">-->
+	 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+	<script src="../static/js/module1.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='reload.js') }}"></script>
+	</style>
+	<title>Naitro-Signup</title>
+	<script>
+        (function () {
+   window.onpageshow = function(event) {
+      if (event.persisted) {
+         window.location.reload();
+      }
+   };
+})();
+    </script>
+
+</head>
+<body>
+<h2 style="color:red">{{var}}</h2>
+<div id="register">
+	<div id="intro">
+		<h1 id="name1">
+			NJ's World
+		</h1>
+		<p>Already have an account?
+			<a style="color:orange" href="{{url_for('login')}}">Sign in here</a></p>
+	</div>
+	<form action="{{url_for('register')}}" method="post">
+		<h2 style="color:orange">Create An Account</h2>
+		<div id="block1">
+			<div>
+
+				<label for="fn" class="lb">First Name</label><br>
+				<input id="fn" name="fn" type="text" placeholder="First Name" required>
+
+			</div>
+
+			<div>
+				<label for="ln" class="lb">Last Name</label><br>
+				<input id="ln" name="ln" type="text" placeholder="Last Name" required>
+			</div>
+		</div>
+		<div id="block2">
+			<div>
+				<label for="mi" class="lb">Email</label><br>
+				<input id="mi" name="mi" type="text" placeholder="Email" required>
+			</div>
+
+			<div>
+				<label for="mn" class="lb">Mobile No.</label><br>
+				<input id="mn" name="mn" type="text" placeholder="Mobile Number" required>
+			</div>
+		</div>
+		<div id="block3">
+			<label for="ad" class="lb"> Address</label><br>
+			<input id="ad" name="ad" type="text" placeholder="Address" required>
+		</div>
+
+		<div id="block4">
+			<div>
+				<label for="pd" class="lb"> Create Password</label><br>
+				<input id="pd" name="pd" type="password" placeholder="Password" required>
+			</div>
+			<div>
+				<label for="cd" class="lb"> Confirm Password</label><br>
+				<input id="cd" name="cd" type="password" placeholder="Re-enter Same Password" required>
+				<h5 style="color:red">{{msg}}</h5>
+			</div>
+		</div>
+		<div id="block5">
+			<div>
+				<input type="checkbox" id="ch" required>
+			</div>
+			<div id="check">
+
+				<p>Creating your account and you accepting <a href="#" style="color:orange">terms and conditions</a></p>
+			</div>
+		</div>
+		<div>
+			<input type="submit" value="Create Account" id="submit">
+		</div>
+		<p>
+
+		</p>
+	</form>
+
+</div>
+</body>
+</html>

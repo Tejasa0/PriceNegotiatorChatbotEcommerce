@@ -1,0 +1,193 @@
+{
+
+  "intents": [
+    {
+      "tag": "unseen",
+      "patterns": ["a","b","c","d","e"],
+      "responses": [
+        "I am not getting what you are saying ",
+        "I don't understand what you want to say.Can you repeat it ?"
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "hiiiiiiiiiii",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Hie"
+      ],
+
+      "responses": [
+        "Hey, Welcome to Naitro. I am price negotiator chatbot. How can I assist you today? ",
+        "Nice to see you here, I am price negotiator chatbot Naitro. How can I help you today?"
+
+      ]
+    },
+    {
+      "tag": "denied",
+      "patterns": [
+        "No its too high",
+        "No",
+        "No deal is not matching my budget"
+      ],
+      "responses": [
+        "Please counter your price,If it is affordable,I can think on it.",
+        "At what price you want this?",
+        "I would like to hear your counter price"
+      ]
+    },
+    {
+      "tag": "final",
+      "patterns": [
+      ],
+      "responses": [
+        "Its too less,can we do for {} ",
+        "Please do it for {}, it is price where we can do deal. ",
+        "Please match my price {} ,It's good for both of us.",
+        "No ,actually I am having very low margin in this product so I can give at min {} ."
+
+      ]
+    },
+    {
+      "tag": "final1",
+      "patterns": ["I want in ",
+        "I can give ",
+        "I can pay ",
+        "ok then can i buy this product in  i think this would be right price",
+        "ok lets done it for rs",
+        "but i want this product in only",
+        "ok i would love to buy this product in",
+        "I want to negotiate"
+      ],
+      "responses": [
+        "Ok ,I am here to negotiate on price, Enter the price you are expecting.",
+        "Sure, I can help you to negotiate."
+
+      ]
+    },
+    {
+      "tag": "feel",
+      "patterns": [
+        "How are you today?",
+        "How are you",
+        "How are u"
+      ],
+      "responses": [
+        "As an artificial intelligence language model, I don't have emotions like humans, but I'm functioning normally and ready to assist you. How can I help you today?",
+        "As an AI language model, I don't have feelings, emotions or physical sensations, but I'm functioning normally and ready to assist you."
+      ]
+
+    },
+    {
+      "tag": "incompatible",
+      "patterns": [],
+      "responses": ["Sorry,It's too less to negotiate,Please enter another price on which we can negotiate",
+      "Actually, Its too less. I would like to hear another counter from you."]
+    },
+    {
+      "tag": "dogla",
+      "patterns": [],
+      "responses": ["Please check your price ,you have entered less price than that you have told in your previous counters",
+      "Sorry but you have lowered your previous counter"]
+    },
+    {
+      "tag": "products",
+      "patterns": [
+        "Ya, that's my product",
+        "right, i want to buy this product but price is too high",
+        "price is too high",
+        "Its too expensive",
+        "I want in less price"
+      ],
+      "responses": [
+        "Ok, so at what price you want to buy",
+        "how much less you are demanding for this product ?",
+        "At what price you want the product ?"
+      ]
+    },
+
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "deal",
+      "patterns": [
+      ],
+      "responses": [
+        "Thank you for using naitro,Your negotiation has been completed.Have a nice day!",
+        " Thank you for taking time to negotiate, your deal has confirmed"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+
+    {
+      "tag": "done",
+      "patterns": [
+        "Ok done",
+        "Ok lets do it",
+        "Ok give me ",
+        "okay give"
+      ],
+      "responses": [
+      ]
+    },
+
+
+
+    {
+      "tag": "proddetails",
+      "patterns": [
+        "Give me more detail about product",
+        "Introduction about product",
+        "product details",
+        "tell me more about product"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "Bye..Have a nice day"
+
+      ]
+    }
+  ]
+}

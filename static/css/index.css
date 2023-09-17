@@ -1,0 +1,99 @@
+body {
+ background-image: url("../images/logo.jpg");
+ max-width:100%;
+}
+#register{
+    margin-left:45%;
+    margin-top:3%;
+}
+#name1
+{
+    color:white;
+    font:bold;
+}
+.lb{
+    color:white;
+    font-size:100%;
+
+}
+#block1,#block2,#block4,#block5{
+    display: flex;
+    margin-bottom:10px;
+    margin-top:10px;
+
+
+}
+#block1 div,#block2 div,#block4 div,#block5 div{
+    padding-right:10%;
+}
+#submit
+{
+    background-color:orange;
+    color:white;
+    width:40%;
+    height:50px;
+    cursor:pointer;
+    margin-top:2.5%;
+    font-size:120%;
+    font:bold;
+}
+#intro h1,
+#intro p {
+    display: inline;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 50px;
+}
+#intro p{
+    color:white;
+    margin-top:20%;
+    margin-left:15%;
+    font-size:0.8rem;
+}
+#ad{
+    width:65%;
+}
+input{
+    height:30px;
+    width:120%;
+}
+
+#check a,#check p,#check input{
+    display: inline;
+
+    color:white;
+    height:15px;
+    padding-bottom:10px;
+}
+#block5 div
+{
+    margin-top:1%;
+    padding:0% 1.5% 0% 0%;
+    margin-bottom:0%;
+}
+#check{
+    height:30px;
+
+}
+#login
+{
+    margin-left:45%;
+    margin-top:3%;
+}
+#name2
+{
+    color:orange;
+}
+label{
+    color:white;
+    font-size:130%;
+}
+#mn1,#pd1
+{
+    color:black;
+    width:60%;
+}
+#block4 h5{
+        padding:0px;
+        margin:1% 0% 0% 0%;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <!--    <meta charset="utf-8">-->
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <!-- mobile metas -->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+          <!-- site metas -->
+    <!--      <title>Sock</title>-->
+          <meta name="keywords" content="">
+          <meta name="description" content="">
+          <meta name="author" content="">
+          <!-- bootstrap css -->
+    <!--      <link rel="stylesheet" href="css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+          <!-- style css -->
+    <!--      <link rel="stylesheet" href="css/style.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+
+
+          <!-- Responsive-->
+    <!--      <link rel="stylesheet" href="css/responsive.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    
+          <!-- fevicon -->
+    <!--      <link rel="icon" href="images/fevicon.png" type="image/gif" />-->
+        <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" , type="image/gif">
+    
+          <!-- Scrollbar Custom CSS -->
+    <!--      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    
+          <!-- Tweaks for older IEs-->
+          <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    
+          <!-- owl stylesheets -->
+    <!--      <link rel="stylesheet" href="css/owl.carousel.min.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    
+    <!--      <link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+          <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script type="text/javascript" src="{{ url_for('static', filename='reload.js') }}"></script>
+          <script src="../static/js/module1.js"></script>
+<!--            <script src="../static/app.js"></script>-->
+        <title>NJ's Shop</title>
+    </head>
+<body>
+    
+    <div>
+    <header class="section">
+        <div class="header p-header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full p-full">
+                        <div class="center-desk">
+                           <div class="p-logo"> <a href="/"><img src="../static/images/products/NJ2.png" alt="#"></a> </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="menu-area">
+                        <div class="limit-box">
+                           <nav class="main-menu">
+                              <ul class="menu-area-main">
+    <!--                                 <li> <a href="/">Home</a> </li>-->
+                                  <li><a href="{{url_for('index')}}">Home</a></li>
+                                 <li> <a href="{{url_for('cart')}}">Cart</a> </li>
+                                 <li><a href="{{url_for('about')}}">About</a></li>
+                                 <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+                                 <{% if flag==False %}
+                                        <li><a href="{{url_for('signup')}}">Signup</a></li>
+                                        <li><a href="{{url_for('login')}}">Login</a></li>
+                                  {% else%}
+                                        <li class="last"><a href="#">{{name}}</a></li>
+<!--                                            <li><a href="{{url_for('logout')}}">Logout</a></li>-->
+
+
+                                      <div class="menu">
+                                           <span class="menu-trigger">
+
+                                                    <ul class="menu-area-main">
+                                                        <li><div class="user-icon"><i class="fa fa-user"></i></div></li>
+                                                    </ul>
+
+                                               <ul class="submenu" style="align-items:right;">
+
+                                                <li ><a href="#" class="item-2" style="font-size:12px; text-align:right;">{{session['user_id']}}</a></li><br>
+                                               <li ><a href="{{url_for('logout')}}" class="item-1" style="font-size:12px; text-align:right;">Logout</a></li>
+
+                                           </ul>
+
+                                           </span>
+
+
+
+
+                                          </div>
+
+                                  {% endif %}
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </header>
+</div>
+    <div class="clothes_main section p-clothes">
+        <div class="container">
+          <div class="row">
+            <!-- Products 1 to 3 -->
+<!--            {% block content %}-->
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div id="P001" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P001') }}">
+                   <figure><img src="../static/images/Products/P001/P001.jpeg" alt="img"/></figure>
+                  <h3> Rs. <strong class="price_text">450</strong></h3>
+                   <h4> Single slot penstand</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P002" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P002') }}">
+                   <figure><img src="../static/images/Products/P002/P002.jpeg" alt="img"/></figure>
+                  <h3> Rs.<strong class="price_text">1100</strong></h3>
+                   <h4> Valentine combo 21.0</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P003" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P003') }}">
+                   <figure><img src="../static/images/Products/P003/P003.jpeg" alt="img"/></figure>
+                   <h3> Rs.<strong class="price_text">700</strong></h3>
+                        <h4>Leather combo 1.0</h4></a>
+                </div>
+             </div>
+
+             <!-- Products 4 to 6 -->
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div id="P004" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P004') }}">
+                   <figure><img src="../static/images/Products/P004/P004.jpeg" alt="img"/></figure>
+                 <h3> Rs.<strong class="price_text">1599</strong></h3>
+                        <h4>Couple Flask combo 1.0</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P005" class="sport_product" >
+                    <a href="{{ url_for('myfunc', id='P005') }}">
+                   <figure><img src="../static/images/Products/P005/P005.jpeg" alt="img"/"></figure>
+                  <h3> Rs. <strong class="price_text">999</strong></h3>
+                        <h4>Customised bedsheet</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P006" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P006') }}">
+                   <figure><img src="../static/images/Products/P006/P006.jpeg" alt="img"/"></figure>
+                  <h3> Rs.<strong class="price_text">500</strong></h3>
+                        <h4>Personalized LED bottel</h4></a>
+                </div>
+             </div>
+<!--            {% endblock %}-->
+             <!-- Products 7 to 9 -->
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div id="P007" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P007') }}">
+                   <figure><img src="../static/images/Products/P007/P007.jpeg" alt="img"/"></figure>
+                 <h3> Rs.<strong class="price_text">400</strong></h3>
+                        <h4>Personalized FurCushion</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P008" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P008') }}">
+                   <figure><img src="../static/images/Products/P008/P008.jpeg" alt="img"/"></figure>
+                  <h3> Rs.<strong class="price_text">500</strong></h3>
+                        <h4>Shadow box</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P009" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P009') }}">
+                   <figure><img src="../static/images/Products/P009/P009.jpeg" alt="img"/></figure>
+                  <h3> Rs.<strong class="price_text">500</strong></h3>
+                        <h4>Kids Lunch Box</h4></a>
+                </div>
+             </div>
+
+             <!-- Products 10 to 12 -->
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div id="P010" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P010') }}">
+                   <figure><img src="../static/images/Products/P010/P010.jpeg" alt="img"/></figure>
+                 <h4> Rs.<strong class="price_text">450</strong></h4>
+                        <h4>Personalized Name Wallet & Heart Keychain combo</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P011" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P011') }}">
+                   <figure><img src="../static/images/Products/P011/P011.jpeg" alt="img"/></figure>
+                  <h3> Rs.<strong class="price_text">500</strong></h3>
+                        <h4>Personalised bottle</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P012" class="sport_product" >
+                    <a href="{{ url_for('myfunc', id='P012') }}">
+                   <figure><img src="../static/images/Products/P012/P012.jpeg" alt="img"/></figure>
+                  <h3> Rs.<strong class="price_text">1700</strong></h3>
+                        <h4>Jumbo Play House Tent</h4></a>
+                </div>
+             </div>
+
+             <!-- Products 13 to 15 -->
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div id="P013" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P013') }}">
+                   <figure><img src="../static/images/Products/P013/P013.jpeg" alt="img"/></figure>
+                 <h3> Rs.<strong class="price_text">500</strong></h3>
+                        <h4>Quote Temperature Bottle</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P014" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P014') }}">
+                   <figure><img src="../static/images/Products/P014/P014.jpeg" alt="img"/></figure>
+                  <h3> Rs.<strong class="price_text">1100</strong></h3>
+                        <h4>Highlighted embroidered name clutch with rose knob</h4></a>
+                </div>
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div id="P015" class="sport_product">
+                    <a href="{{ url_for('myfunc', id='P015') }}">
+                   <figure><img src="../static/images/Products/P015/P015.jpeg" alt="img"/></figure>
+                  <h3> Rs.<strong class="price_text">1300</strong></h3>
+                        <h4>Gift Combo for Her</h4></a>
+                </div>
+             </div>
+           </div>
+          </div>
+         </div>
+
+         
+
+         
+</body>
+</html>
